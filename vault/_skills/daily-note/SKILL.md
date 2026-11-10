@@ -6,7 +6,7 @@ description: Create today's daily note from the vault's open actions, calendar a
 # daily-note
 
 1. Look for `_daily/YYYY-MM-DD.md` for today. If the note exists, read it and stop. Continue only if the user asked for a refresh.
-2. Copy `_templates/daily-note.md` to `_daily/YYYY-MM-DD.md`.
+2. Copy `_templates/daily-note.md` to `_daily/YYYY-MM-DD.md`. Replace each `{{date}}` with today's date.
 3. If a calendar tool is connected, list today's meetings under **Meetings today**. For each meeting, write if a prep note or a person note exists.
 4. Read `open-actions.md`. Copy each action that is due today or overdue into **Due or overdue**.
 5. Under **Prep needed**, list each meeting that is related to an open action, or to a project that changed in the last 7 days.

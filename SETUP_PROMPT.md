@@ -84,7 +84,7 @@ The agent asks you a few questions and does the rest. If you've already cloned t
 6. **Add my existing notes.** Do this step only if my answer to question 5 in step 2 was yes.
    1. Ask me to confirm that my company's policy permits these notes in the vault. If I do not confirm, skip this step.
    2. Copy the notes from the location that I gave into `00-inbox/`. Do not move or change the originals.
-   3. Run the `process-inbox` skill in `_skills/`.
+   3. Read `<vault>/_skills/process-inbox/SKILL.md` and follow it. Do not wait for the skill to load. A session that did not start in the vault cannot load the vault skills.
    4. If you do not know which folder a note goes in, ask me before you move it.
 
 7. **Daily summary.** Do this step only if my answer to question 6 in step 2 was yes.
@@ -99,7 +99,7 @@ The agent asks you a few questions and does the rest. If you've already cloned t
    - The summary must go only to me.
    - Do not create the scheduled task unless I approve.
 
-8. **Create today's note** with the `daily-note` skill. The skill commits the note. Do not send the summary today. From the next day, `daily-note` sends the summary when it creates the day's note: from the scheduled task if I created one, or else from my first session of the day.
+8. **Create today's note.** Read `<vault>/_skills/daily-note/SKILL.md` and follow it. A session that did not start in the vault cannot load the vault skills. The skill commits the note. Do not send the summary today. From the next day, `daily-note` sends the summary when it creates the day's note: from the scheduled task if I created one, or else from my first session of the day.
 
 9. **Delete the temporary clone.** If you cloned the repo into a temporary folder, delete that clone. Do not delete a clone that I made.
 

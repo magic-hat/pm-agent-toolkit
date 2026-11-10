@@ -65,5 +65,5 @@ echo
 echo "Next:"
 echo "  Work in the vault:      cd \"$dest\" and start your agent there"
 echo "  Work in a code repo:    claude --add-dir \"$dest\""
-echo "  Finish setup:           start your agent in the vault and paste in SETUP_PROMPT.md"
+echo "  Finish setup:           start your agent in the vault and paste in $(dirname "$src")/SETUP_PROMPT.md"
 echo "                          (everything below the line). It asks a few questions and skips the install."
