@@ -1,0 +1,6 @@
+.DS_Store
+.obsidian/workspace*
+.obsidian/cache
+.trash/
+# Large or sensitive attachments: add patterns here, for example
+# _attachments/*.mp4
